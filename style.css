@@ -1,0 +1,335 @@
+/*
+-------------------------------------------------
+HAL NICHOLS ASSOCIATES WEBSITE
+
+COPYRIGHT 2010-2015
+
+WEBSITE DESIGN: AUSTIN BAKER | DARK CLOUD STUDIOS
+--------------------------------------------------
+*/
+
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html, body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.6em;
+	background: url(Images/background.gif);
+	background-repeat: repeat;
+	text-align: center;
+}
+
+p, ul {
+	font-size: 1.14rem;
+	margin: 0 0 10px 0;
+}
+
+a,
+a:visited,
+a:focus,
+a:active {
+	text-decoration: none;
+	outline: 0;
+	border: 0;
+}
+
+/* for Internet Explorer */
+a img {
+	border: none;
+	outline: none;
+}
+
+/* so divs wrap around floated divs */
+.clear {
+	clear: both;
+}
+
+hr,
+hr.sub-line {
+	background-color: #0e2d6d;
+	width: 100%;
+	height: 3px;
+	margin: 0 auto;
+	border: none;
+	outline: 0;
+	display: block;
+	margin-bottom: 10px;
+}
+
+hr.sub-line {
+	width: 80%;
+	background-color: darkgrey;
+	height: 1px;
+}
+
+h1, h2, h3 {
+	font-family: CopperplateGothicStd-Bold, serif;
+}
+
+h2 {
+	font-size: 1.7rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+/* utility classes
+------------------------------------------*/
+.inline-list {
+	padding-left: 0;
+}
+
+.inline-list > li {
+	width: 45%;
+	padding: 10px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.margin-right {
+	margin-right: 40px;
+}
+
+.margin-left {
+	margin-left: 40px;
+}
+
+.margin-top {
+	margin-top: 50px;
+}
+
+.sm-margin-top {
+	margin-top: 20px;
+}
+
+.center-block {
+	float: none !important;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.line {
+	background: #0e2d6d;
+	width: 100%;
+	height: 4px;
+}
+
+.rowSpacer {
+	margin-top: 20px;
+}
+
+/* header
+------------------------------------------*/
+.oneColFixCtrHdr #header {
+	background: #FFFFFF;
+	position: relative;
+}
+
+#header #logo {
+	text-align: center;
+	width: 200px;
+	margin: 0 auto;
+}
+
+#header #headerbar {
+	background: url(Images/header1.gif);
+	background-repeat: repeat;
+	width: 590px;
+	height: 100px;
+}
+
+#header #navigationbar {
+	background: url(Images/header2.gif);
+	background-repeat: repeat;
+	width: 850px;
+	height: 55px;
+}
+
+#header #navigationbar #navtext {
+	text-align: left;
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+	color: #FFFFFF;
+	padding-top: 18px;
+}
+
+#header #navigationbar #navtext .links {
+	padding: 0 20px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#header #navigationbar #navtext .links:hover {
+	font-weight: bold;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* body
+------------------------------------------*/
+
+.oneColFixCtrHdr #container {
+	height: 100%;
+	width: 850px;
+	background: #FFF;
+	margin: 0 auto;
+	text-align: left;
+	position: relative;
+}
+
+.col-6,
+.col-12 {
+	padding: 0 15px;
+}
+
+.col-1 {
+	float: left;
+	width: 20%;
+	padding: 20px;
+}
+
+.col-6 {
+	float: left;
+	width: 46%;
+}
+
+.col-12 {
+	padding: 0 15px;
+}
+
+/* slideshow
+------------------------------------------*/
+#imageSlideShow {
+	width: 850px;
+	height: 304px;
+	overflow: hidden;
+	position: relative;
+}
+
+#imageSlideShow .img {
+	opacity: 0.0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline;
+}
+
+/* home
+------------------------------------------*/
+#profileContainer {
+	margin-left: 60px;
+	margin-top: 60px;
+	width: 280px;
+	position: relative;
+}
+
+#profileImg {
+	width: 305px;
+	height: 418px;
+	border-radius: 10px;
+	background: url(Images/Hal_new.jpg) no-repeat;
+}
+
+#verifiedimg {
+	margin-top: 80px;
+	text-align: center;
+}
+
+#verifiedtext {
+	margin-bottom: 5px;
+	text-align: center;
+	font-size: 14px;
+	position: relative;
+}
+
+#namelicense {
+	margin-left: 30px;
+	margin-top: 5px;
+	position: relative;
+	text-align: center;
+	font-size: 26px;
+	line-height: 16px;
+	font-family: "CopperplateGothicStd-Medium", serif;
+}
+
+/* contact
+------------------------------------------*/
+
+.map {
+	margin: 50px 0 20px 0;
+	padding: 5px;
+	border: inset #0033CC 6px;
+	width: auto;
+	height: 400px;
+	position: relative;
+}
+
+.map iframe {
+	height: 100%;
+	width: 100%;
+}
+
+/* footer
+------------------------------------------*/
+footer {
+	width: 850px;
+	height: 100px;
+	margin-top: 20px;
+}
+
+.oneColFixCtrHdr footer {
+	background: url(Images/footer.gif);
+}
+
+/* fonts
+------------------------------------------*/
+@font-face {
+	font-family: "CopperplateGothicStd-Medium";
+	src: url(fonts/CopperplateGothicStd-31BC.otf);
+}
+
+@font-face {
+	font-family: "CopperplateGothicStd-Light";
+	src: url(fonts/CopperplateGothicStd-32BC.otf);
+}
+
+@font-face {
+	font-family: "CopperplateGothicStd-Bold";
+	src: url(fonts/CopperplateGothicStd-33BC.otf);
+}
+
+
+
+
+
+
