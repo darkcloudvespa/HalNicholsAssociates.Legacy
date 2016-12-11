@@ -28,10 +28,9 @@ time, mark, audio, video {
 
 html, body {
 	font-family: Helvetica, Arial, sans-serif;
-	font-size: 14px;
-	line-height: 1.6em;
-	background: url(Images/background.gif);
-	background-repeat: repeat;
+	font-size: 16px;
+	line-height: 1.4;
+	background: url("images/background.gif") repeat;
 	text-align: center;
 }
 
@@ -65,11 +64,10 @@ hr.sub-line {
 	background-color: #0e2d6d;
 	width: 100%;
 	height: 3px;
-	margin: 0 auto;
 	border: none;
 	outline: 0;
 	display: block;
-	margin-bottom: 10px;
+	margin: 0 auto 10px auto;
 }
 
 hr.sub-line {
@@ -148,6 +146,10 @@ h3 {
 	margin-top: 20px;
 }
 
+p.no-margin-bottom {
+	margin-bottom: 0;
+}
+
 /* header
 ------------------------------------------*/
 .oneColFixCtrHdr #header {
@@ -162,14 +164,14 @@ h3 {
 }
 
 #header #headerbar {
-	background: url(Images/header1.gif);
+	background: url("images/header1.gif");
 	background-repeat: repeat;
 	width: 590px;
 	height: 100px;
 }
 
 #header #navigationbar {
-	background: url(Images/header2.gif);
+	background: url("images/header2.gif");
 	background-repeat: repeat;
 	width: 850px;
 	height: 55px;
@@ -197,7 +199,6 @@ h3 {
 
 /* body
 ------------------------------------------*/
-
 .oneColFixCtrHdr #container {
 	height: 100%;
 	width: 850px;
@@ -244,6 +245,115 @@ h3 {
 	display: inline;
 }
 
+/* table
+------------------------------------------*/
+
+table {
+	border-collapse: collapse;
+}
+
+th {
+	font-size: 1rem;
+}
+
+td {
+	width: 28%;
+}
+
+th, td {
+	padding: 0.5rem 0.625rem 0.625rem;
+}
+
+thead,
+table tbody tr:nth-child(even) {
+	background: #f1f1f1;
+}
+
+.table-border {
+	border: 1px solid #f1f1f1;
+}
+
+.table-border tr > td:first-child {
+	border-right: 1px solid #f1f1f1;
+}
+
+.table-border thead th:first-child,
+.table-border tr:nth-child(even) > td:first-child {
+	border-right: 1px solid #ffffff;
+}
+
+/* accordion
+------------------------------------------*/
+.accordion {
+	list-style-type: none;
+	background: #fefefe;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.accordion p,
+.accordion li,
+.accordion table td {
+	font-size: .85rem;
+}
+
+hr {
+	margin: 30px 0;
+}
+
+.accordion h3 {
+	font-family: Helvetica, Arial, sans-serif;
+	margin-bottom: 1rem;
+}
+
+.accordion-title {
+	font-family: "CopperplateGothicStd-Bold", serif;
+	display: block;
+	padding: 1.25rem 1rem;
+	line-height: 1;
+	font-size: 24px;
+	color: #000000;
+	position: relative;
+	border-bottom: 0;
+}
+
+.is-active > .accordion-title {
+	border: 1px solid #000000;
+}
+
+:not(.is-active) > .accordion-title {
+	border-radius: 0 0 3px 3px;
+	background: #efefef;
+}
+
+:not(.is-active) > .accordion-title:hover,
+.accordion-title:hover {
+	background-color: #e3e3e3;
+}
+
+.accordion-title:focus {
+	background: #ffffff;
+}
+
+.accordion-title::before {
+	content: '+';
+	position: absolute;
+	right: 1rem;
+	top: 50%;
+	margin-top: -0.5rem;
+}
+
+.is-active > .accordion-title::before {
+	content: '–'; }
+
+.accordion-content {
+	padding: 1rem;
+	display: none;
+	background-color: #fefefe;
+	color: #0a0a0a;
+	border: 1px solid #E6E6E6;
+}
+
 /* home
 ------------------------------------------*/
 #profileContainer {
@@ -257,7 +367,7 @@ h3 {
 	width: 305px;
 	height: 418px;
 	border-radius: 10px;
-	background: url(Images/Hal_new.jpg) no-repeat;
+	background: url("images/Hal_new.jpg") no-repeat;
 }
 
 #verifiedimg {
@@ -268,7 +378,7 @@ h3 {
 #verifiedtext {
 	margin-bottom: 5px;
 	text-align: center;
-	font-size: 14px;
+	font-size: .85rem;
 	position: relative;
 }
 
@@ -284,7 +394,6 @@ h3 {
 
 /* contact
 ------------------------------------------*/
-
 .map {
 	margin: 50px 0 20px 0;
 	padding: 5px;
@@ -308,26 +417,25 @@ footer {
 }
 
 .oneColFixCtrHdr footer {
-	background: url(Images/footer.gif);
+	background: url("images/footer.gif");
 }
 
 /* fonts
 ------------------------------------------*/
 @font-face {
 	font-family: "CopperplateGothicStd-Medium";
-	src: url(fonts/CopperplateGothicStd-31BC.otf);
+	src: url("fonts/CopperplateGothicStd-31BC.otf");
 }
 
 @font-face {
 	font-family: "CopperplateGothicStd-Light";
-	src: url(fonts/CopperplateGothicStd-32BC.otf);
+	src: url("fonts/CopperplateGothicStd-32BC.otf");
 }
 
 @font-face {
 	font-family: "CopperplateGothicStd-Bold";
-	src: url(fonts/CopperplateGothicStd-33BC.otf);
+	src: url("fonts/CopperplateGothicStd-33BC.otf");
 }
-
 
 
 
