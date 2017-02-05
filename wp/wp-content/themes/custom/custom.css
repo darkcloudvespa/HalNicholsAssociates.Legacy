@@ -1,0 +1,29 @@
+/* Custom and overridden css classes
+------------------------------------------*/
+
+/* Visual Form Builder Plugin styles */
+.visual-form-builder.left-label .vfb-desc, .visual-form-builder.right-label .vfb-desc{
+	width: 100%;
+}
+
+/* Gravity Forms styles */
+.gfield_label {
+	margin: 0;
+}
+
+.gform_wrapper form li,
+.gform_wrapper li {
+	margin-bottom: 1.5rem;
+}
+
+/* Shopp checkout form */
+.shopp_page form ul select.required {
+	color: #000000;
+}
+
+.shopp_page form ul div input,
+.shopp_page form ul div select,
+.shopp_page form ul input,
+.shopp_page form ul select {
+	margin: 5px 0 20px 0;
+}
